@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Report - 1st Feb</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #e67e22; /* Burnt Orange for theme */
+            margin-top: 30px;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 1px solid #ddd;
+        }
+        .receiver {
+            font-size: 0.9em;
+            color: #7f8c8d;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            font-size: 0.95em;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+        th {
+            background-color: #f9f9f9;
+            font-weight: bold;
+            color: #555;
+        }
+        .cost-col {
+            text-align: right;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+        .total-row td {
+            font-weight: bold;
+            background-color: #fdfdfd;
+        }
+        .note {
+            font-size: 0.85em;
+            color: #666;
+            background-color: #fff3cd;
+            padding: 10px;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+        .footer {
+            margin-top: 50px;
+            text-align: center;
+            font-size: 0.8em;
+            color: #aaa;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+        @media print {
+            body { padding: 0; }
+            .note { background-color: #eee !important; -webkit-print-color-adjust: exact; }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Expense Report</h1>
+    <p><strong>Date:</strong> 1st February | <strong>Theme:</strong> Burmese Food & Hangout</p>
+
+    <h2>1. Lunch (Zayyar Restaurant)</h2>
+    <div class="receiver">Payment Receiver: <strong>Soe</strong></div>
+    <table>
+        <thead>
+            <tr>
+                <th style="width: 20%;">Name</th>
+                <th style="width: 65%;">Items</th>
+                <th class="cost-col">Total (RM)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Keisha</td>
+                <td>Nan Gyi Thoke, Tea, Fried Stuff</td>
+                <td class="cost-col">14.75</td>
+            </tr>
+            <tr>
+                <td>Jolyn</td>
+                <td>Chicken Biryani, Tea, Fried Stuff, Khaja</td>
+                <td class="cost-col">23.75</td>
+            </tr>
+            <tr>
+                <td>Daphne</td>
+                <td>Rice, Dry Fried Fish, Prawns, Beef, Iced Tea, Fried Stuff, Khaja</td>
+                <td class="cost-col">20.75</td>
+            </tr>
+            <tr>
+                <td>Matthew</td>
+                <td>Mohinga, Fried Stuff</td>
+                <td class="cost-col">12.25</td>
+            </tr>
+            <tr>
+                <td>Jason</td>
+                <td>Coconut Noodle Soup, Fried Stuff</td>
+                <td class="cost-col">12.25</td>
+            </tr>
+            <tr>
+                <td>Soe</td>
+                <td>Rice, Fish, Prawns, Beef, Tea, Fried Stuff, Monhinga, Salad, Curry</td>
+                <td class="cost-col">47.75</td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="note">Note: Tea Leaf Salad was the same price as Nan Gyi Thoke (x2 quantity noted).</div>
+
+    <h2>2. Transport</h2>
+    <div class="receiver">Payment Receiver: <strong>Keisha</strong> (Mostly)</div>
+    <table>
+        <thead>
+            <tr>
+                <th>Route</th>
+                <th>Details</th>
+                <th>Who Pays?</th>
+                <td class="cost-col">Cost/Pax</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>FGA to Zayyar (Grab)</td>
+                <td>Total RM45.00</td>
+                <td>Everyone &rarr; Keisha</td>
+                <td class="cost-col">7.50</td>
+            </tr>
+            <tr>
+                <td>Putra Jaya to Xiamen (Grab)</td>
+                <td>Total RM17.00</td>
+                <td>Riders &rarr; Keisha</td>
+                <td class="cost-col">4.25</td>
+            </tr>
+            <tr>
+                <td>LRT (Pasar Seni - Bukit Bintang)</td>
+                <td>RM 1.60</td>
+                <td>Matthew &rarr; <strong>Soe</strong></td>
+                <td class="cost-col">1.60</td>
+            </tr>
+            <tr>
+                <td>MRT (Bukit Bintang - Putra Jaya)</td>
+                <td>RM 4.60</td>
+                <td>Matthew (Self)</td>
+                <td class="cost-col">-</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>3. Snooker & Pool</h2>
+    <div class="receiver">Payment Receiver: <strong>Jason</strong></div>
+    <table>
+        <thead>
+            <tr>
+                <th>Activity</th>
+                <th>Total Cost</th>
+                <th class="cost-col">Split Per Person</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Snooker & Pool Session</td>
+                <td>RM 38.90</td>
+                <td class="cost-col">6.48</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>4. Dinner</h2>
+    <div class="receiver">Payment Receiver: <strong>Keisha</strong></div>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Items</th>
+                <th class="cost-col">Total (RM)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Jolyn</td>
+                <td>ChickenJoy Meal (14.90) + Cheesy Fries (4.50)</td>
+                <td class="cost-col">19.40</td>
+            </tr>
+            <tr>
+                <td>Daphne</td>
+                <td>Spicy Chicken Sandwich</td>
+                <td class="cost-col">19.70</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
