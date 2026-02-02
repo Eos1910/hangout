@@ -77,6 +77,16 @@
             border-radius: 5px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
+        .img-caption {
+            display: block;
+            margin-bottom: 25px; /* Space between caption and next image */
+            font-size: 0.9em;
+            color: #666;
+            font-style: italic;
+        }
+        .img-caption:last-child {
+            margin-bottom: 0;
+        }
 
         .footer {
             margin-top: 50px;
@@ -220,11 +230,18 @@
         </tbody>
     </table>
 
-    <h2>5. Receipt</h2>
+    <h2>5. Receipts</h2>
     <div class="receipt-container">
-        <img src="receipt.jpg" alt="Expense Receipt">
-        <br>
-        <small>Original Receipt Scanned</small>
+        
+        <img src="lunch_receipt.jpg" alt="Lunch1">
+        <span class="img-caption">Receipt 1</span>
+
+        <img src="snooker_receipt.jpeg" alt="Snooker">
+        <span class="img-caption">Receipt 2</span>
+
+        <img src="jolibee_receipt.jpeg" alt="Dinner">
+        <span class="img-caption">Receipt 3</span>
+
     </div>
 
 </body>
