@@ -53,10 +53,6 @@
             font-weight: bold;
             white-space: nowrap;
         }
-        .total-row td {
-            font-weight: bold;
-            background-color: #fdfdfd;
-        }
         .note {
             font-size: 0.85em;
             color: #666;
@@ -65,6 +61,23 @@
             border-radius: 4px;
             margin-top: 10px;
         }
+        
+        /* NEW: Styles for the Receipt Image */
+        .receipt-container {
+            margin-top: 30px;
+            text-align: center;
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #e9ecef;
+        }
+        .receipt-container img {
+            max-width: 100%; /* Makes sure the image shrinks for mobile phones */
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
         .footer {
             margin-top: 50px;
             text-align: center;
@@ -72,10 +85,6 @@
             color: #aaa;
             border-top: 1px solid #eee;
             padding-top: 20px;
-        }
-        @media print {
-            body { padding: 0; }
-            .note { background-color: #eee !important; -webkit-print-color-adjust: exact; }
         }
     </style>
 </head>
@@ -150,7 +159,7 @@
             <tr>
                 <td>Putra Jaya to Xiamen (Grab)</td>
                 <td>Total RM17.00</td>
-                <td>Riders &rarr; Keisha</td>
+                <td>Riders (excl. Jolyn) &rarr; Keisha</td>
                 <td class="cost-col">4.25</td>
             </tr>
             <tr>
@@ -210,6 +219,13 @@
             </tr>
         </tbody>
     </table>
+
+    <h2>5. Receipt</h2>
+    <div class="receipt-container">
+        <img src="receipt.jpg" alt="Expense Receipt">
+        <br>
+        <small>Original Receipt Scanned</small>
+    </div>
 
 </body>
 </html>
